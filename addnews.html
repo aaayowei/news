@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">  
+    <meta charset="UTF-8">  
+    <title>添加新闻</title>  
+    <style type="text/css">
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+            width: 300px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+	    border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        } 	
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center; font-size: 24px;">添加新闻</h1>
+        <form action="action_addnews.php" method="post">
+            <label>标题：</label><input type="text" name="title">
+            <label>关键字：</label><input type="text" name="keywords">
+            <label>作者：</label><input type="text" name="autor">
+            <label>发布时间：</label><input type="date" name="addtime">
+	    <label>内容：</label><input type="text" name="content">
+            <input type="submit" value="提交">
+        </form>
+    </div>
+</body>
+</html>
+
